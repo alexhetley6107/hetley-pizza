@@ -1,6 +1,11 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
-const Categories = ({ category, selectCategory }) => {
+type CategoryProps = {
+	category: number;
+	selectCategory: (idx: number) => void;
+};
+
+const Categories: FC<CategoryProps> = ({ category, selectCategory }) => {
 	const categories = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
 
 	return (

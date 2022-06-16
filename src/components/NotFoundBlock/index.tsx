@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import s from './NotFoundBlock.module.scss';
 
-export const NotFoundBlock = () => {
+export const NotFoundBlock: FC = () => {
 	return (
 		<div className={s.root}>
 			<h1>
