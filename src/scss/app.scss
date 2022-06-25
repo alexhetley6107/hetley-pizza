@@ -17,13 +17,18 @@ body {
   max-width: 1400px;
 
   @media (max-width: 645px) {
-    width: calc(100vw - 30px);
-    margin-top: 5px;
+    width: 100vw;
+    margin-top: 0px;
+    border-radius: 0px;
   }
 }
 
 .content {
   padding: 40px 0;
+  @media (max-width: 645px) {
+    padding: 0;
+    padding-bottom: 40px;
+  }
 
   &__error-info{
     text-align: center;
@@ -174,6 +179,14 @@ body {
       margin-left: 7px;
       color: #b6b6b6;
       font-size: 18px;
+      @media (max-width: 400px) {
+        display: none;
+      }
+    }   
+    svg{
+      @media (max-width: 400px) {
+        margin-right:20px
+      }
     }
 
     span,
@@ -195,7 +208,7 @@ body {
   }
   .content__items {
     display: block;
-  }
+  }  
 
   &__item {
     display: flex;
@@ -203,6 +216,32 @@ body {
     border-top: 1px solid $gray-line;
     padding-top: 30px;
     margin-top: 30px;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+
+    &-desc  {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      justify-content: space-between;
+      @media (max-width: 600px) {
+        width: 100%;
+        margin-bottom:20px
+      }
+    
+    }
+    &-block{
+      display: flex;
+      align-items: center;
+      width: 50%;
+      justify-content: space-between;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    
+    }
 
     &-img {
       display: flex;
@@ -220,13 +259,14 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 40%;
+      width: 70%;
 
       h3 {
         font-weight: bold;
         font-size: 22px;
         line-height: 27px;
         letter-spacing: 0.01em;
+        
       }
 
       p {
@@ -240,6 +280,7 @@ body {
       align-items: center;
       justify-content: space-between;
       width: 13%;
+      margin-left:30px;
 
       &-minus {
         svg {
@@ -335,6 +376,9 @@ body {
 
       span {
         font-size: 22px;
+        @media (max-width: 465px) {
+          font-size: 16px;
+        }
 
         &:last-of-type {
           b {
@@ -349,11 +393,19 @@ body {
       justify-content: space-between;
       margin-top: 40px;
 
+      @media (max-width: 465px) {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+
       .go-back-btn {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 210px;
+        margin: 10px;
+        text-align: center;
 
         border-color: darken($color: $gray-line, $amount: 10);
 
@@ -386,6 +438,8 @@ body {
         font-weight: 600;
         width: 210px;
         padding: 16px;
+        margin: 10px;
+
       }
     }
   }
@@ -395,9 +449,17 @@ body {
     width: 560px;
     text-align: center;
 
+    @media (max-width: 700px) {
+      width: 100%;
+      margin-top: 5px;
+    }
+
     h2 {
       font-size: 32px;
       margin-bottom: 10px;
+      @media (max-width: 700px) {
+        font-size: 24px;
+      }
     }
 
     p {
@@ -416,6 +478,11 @@ body {
       display: block;
       width: 230px;
       margin: 45px auto 60px;
+      @media (max-width: 700px) {
+        width: 150px;
+
+
+      }
     }
 
     .button--black {

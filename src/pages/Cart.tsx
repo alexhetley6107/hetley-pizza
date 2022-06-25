@@ -56,7 +56,7 @@ const Cart: FC = () => {
 									strokeLinejoin='round'
 								/>
 							</svg>
-							Корзина
+							Корзинка
 						</h2>
 						<div onClick={onClearCart} className='cart__clear'>
 							<svg
