@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hetley-pizza/static/css/main.eeb9d496.css",
-    "main.js": "/hetley-pizza/static/js/main.a2af7bb7.js",
+    "main.css": "/hetley-pizza/static/css/main.ac9111aa.css",
+    "main.js": "/hetley-pizza/static/js/main.53ed36d5.js",
     "static/media/empty-cart.png": "/hetley-pizza/static/media/empty-cart.db905d1f4b063162f25b.png",
     "static/media/pizza-logo.svg": "/hetley-pizza/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg",
     "index.html": "/hetley-pizza/index.html",
-    "main.eeb9d496.css.map": "/hetley-pizza/static/css/main.eeb9d496.css.map",
-    "main.a2af7bb7.js.map": "/hetley-pizza/static/js/main.a2af7bb7.js.map"
+    "main.ac9111aa.css.map": "/hetley-pizza/static/css/main.ac9111aa.css.map",
+    "main.53ed36d5.js.map": "/hetley-pizza/static/js/main.53ed36d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeb9d496.css",
-    "static/js/main.a2af7bb7.js"
+    "static/css/main.ac9111aa.css",
+    "static/js/main.53ed36d5.js"
   ]
 }
